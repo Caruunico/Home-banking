@@ -45,6 +45,9 @@ function alertExtraccion(monto, saldoCuenta, saldoAnterior){
     alert("Extraccion de $:"+ monto + "\nSaldo cuenta $:" + saldoCuenta + "\nSaldo anterior $:" + saldoAnterior);
 }
 function cambiarLimite(monto){
+    if(monto === null){
+        return limiteAnterior;
+    }
     limiteAnterior = limiteExtraccion;
     limiteExtraccion = monto;
     monto = parseFloat(monto);
@@ -104,14 +107,13 @@ function cambiarLimiteDeExtraccion() {
         var monto = prompt("Ingrese el nuevo limite de extraccion");
         if(validaValoresNumericos(monto) && numeroNegativo(monto) && billetes100(monto)){
             cambiarLimite(monto);
-            limiteAnterior = limiteExtraccion;
-        }
         actualizarLimiteEnPantalla();
+}
 }
 
 function extraerDinero() {
     var monto = prompt("Ingrese monto que desea extraer");
-    if( monto == ""){
+    if( monto === ""){
         alert("Debe ingresar un monto a extraer");
         return false;
     }

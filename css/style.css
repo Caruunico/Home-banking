@@ -3,7 +3,7 @@ body {
 
     font-family: "Source Sans Pro", sans-serif;
 
-    background-color: #2a333d;
+    background-color: #1b589e;
 }
 
 .avatar {
@@ -37,8 +37,8 @@ body {
     font-size: 32px;
     font-weight: normal;
 
-    color: #2a333d;
-    border-left: 6px solid #2cc197;
+    color: #238cb6;
+    border-left: 6px solid #238cb6;
 }
 
 .header {
@@ -86,7 +86,7 @@ body {
     text-align: left;
     vertical-align: text-bottom;
 
-    color: #666;
+    color: #238cb6;
     border: 0;
     background-color: transparent;
 }
@@ -104,7 +104,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 
-    border: 1px solid #979797;
+    border: 1px solid #238cb6;
     border-radius: 8px;
     background-color: #fff;
 
@@ -120,7 +120,7 @@ body {
 
     color: white;
     border-radius: 8px;
-    background-color: #2cc197;
+    background-color: #25779798;
 
     align-items: center;
 }
