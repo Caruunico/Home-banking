@@ -218,6 +218,7 @@ function transferirDinero() {
     }
 
 function iniciarSesion() {
+    alert("En el próximo mensaje, ingrese:" + "\n" + "Usuario: Nicolas Caruso" + "\n" + "Clave: 1234 " + "\n" + "Presione aceptar para poder ver sus funcionalidades.");
     var usuario = prompt ("Ingrese su usuario:");
     var clave = prompt("Ingrese su clave:");
 
@@ -226,8 +227,10 @@ function iniciarSesion() {
             return true; 
         } else {
             saldoCuenta = 0;
-            alert("Usuario y/o clave incorrecta");               
+            cargarNombreEnPantalla = undefined;
+            alert("Usuario y/o clave incorrecta");            
             return false;
+
     }    
 }
 
